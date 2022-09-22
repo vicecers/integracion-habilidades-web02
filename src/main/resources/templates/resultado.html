@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://wwww.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Resultado</h1>
+        <label th:text="'Hola '+ ${empleado.nombre}"></label>
+        <br><br>
+        <table border="1">
+            <tr>
+                <th align="left"> Tu sueldo total fué: </th>
+                <td><label th:text="${empleado.SueldoTotal} + ' Pesos'"></label></td>
+            </tr>
+        </table>
+        <br>
+        <a th:href="@{/}">
+            <button>Regresar</button>
+        </a> 
+    </body>
+</html>
